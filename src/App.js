@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./pages/Home.js";
+import Header from "./components/Header.js";
+import WhatsappIcon from "./components/WhatsappIcon.js";
+import UpToTop from "./components/UpToTop.js";
+import './stylesheet/app.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { phoneNumber } from './config/config.js';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Header />
+        <WhatsappIcon phoneNumber={ phoneNumber }/>
+        <UpToTop />
+        <div  className="body-content">  
+            <Router>
+                <Switch>
+                    <Route path="/category/:category">
+                        <Home />
+                    </Route>
+                    <Route path="/">
+                        <Home />
+                    </Route>
+                </Switch>
+            </Router>
+        </div>
+    </>
   );
 }
 

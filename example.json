@@ -1,0 +1,13 @@
+[
+    {
+        "image":{
+           "path": "http:\/\/localhost\/cockpit-master\/storage\/uploads\/alpargatas\/200-azul.jpg"
+        },
+        "category":{
+           "_id":"5fc92aaf393239c2c30002d6",
+           "link":"categories",
+           "display":"Alpargatas",
+           "name":"Alpargatas"
+        }
+     }
+]
