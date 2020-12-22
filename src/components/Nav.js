@@ -53,7 +53,9 @@ export const Nav = ({ category }) => {
                     ))
                 }
             </ul>
+            {/*
             <SocialFb />
+            */}
         </nav>
         <button className="show-btn btn btn-primary mb-3" onClick={ () => handleNav() }><i className="fas fa-filter"></i> Categorias</button>
         </>

@@ -7,7 +7,7 @@ import Loader from "../components/Loader.js";
 import '../stylesheet/home.css';
 
 export const HomePage = () => {
-  const { category } = useParams();
+  let { category } = useParams();
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState();
 
