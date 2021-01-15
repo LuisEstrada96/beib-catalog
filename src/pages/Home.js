@@ -19,6 +19,8 @@ export const HomePage = () => {
         setLoading(false);
         window.scrollTo({ top: 0, behavior: 'smooth' });
     })
+    
+    
 }, [category]);
 
 

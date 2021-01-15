@@ -19,6 +19,15 @@
     cursor: pointer;
 
 }
+.category-item{
+    background-color: #ecb1b1;
+    color: white!important;
+    border-radius: 0;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
 .float-whatsapp a{
     text-decoration: none!important;
     color: white;

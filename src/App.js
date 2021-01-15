@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "./pages/Home.js";
+import Main from "./pages/Main.js";
 import Header from "./components/Header.js";
 import UpToTop from "./components/UpToTop.js";
 import './stylesheet/app.css';
@@ -17,7 +18,7 @@ export const App = () => {
                         <Home />
                     </Route>
                     <Route path="/">
-                        <Home />
+                        <Main />
                     </Route>
                 </Switch>
             </Router>
